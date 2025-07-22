@@ -4,10 +4,7 @@ import cors from 'cors';
 const app = express();
 
 // ✅ Safer CORS for production:
-const allowedOrigins = [
-  'http://localhost:3000',             // your local frontend
-  'https://your-frontend.vercel.app'   // your deployed frontend (update this!)
-];
+const allowedOrigins ='http://localhost:3000'
 
 app.use(cors({
   origin: allowedOrigins,
