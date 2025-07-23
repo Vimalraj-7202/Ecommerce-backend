@@ -4,7 +4,7 @@ import app from './app.js'
 import commonRouter from './routes/commonRoutes.js';
 
 dotenv.config();
-const PORT = process.env.PORT || 5000
+const PORT = process.env.Port|| 5000
 connectDB();
 
 app.use('/api', commonRouter);
