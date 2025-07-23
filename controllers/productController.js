@@ -14,7 +14,7 @@ export const addProduct=async(req,res)=>{
 export const getAllProduct=async(req,res)=>{
     try{
         const getallproduct=await getAllProducts();
-        res.status(200).json({message:'products fetched successfully',getallproduct})
+        res.status(200).json({message:'products fetched successfully',products:getallproduct})
     }catch(error){
         res.status(500).json({message:'Failed to fetch all products',error:error.message})
     }
